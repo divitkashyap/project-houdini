@@ -20,13 +20,13 @@ Additionally, each connection between nodes can have variable secuirity strength
 
 We developed a quantum optimisation algorithm for the bank robber to find the optimal solution for wire cuts for 3 differing types of scenario.
 
-1)Balanced max cut (Fig.1)
+1)Balanced max cut (Fig.1) 
 
 For this system configuration, this levels system bot checks if all separate graphs on the floor have equal connectivity strengths (within a given range). If the absolute difference of the resulting partitions are greater than the threshold then the alarm is triggered. We used the QAOA optimisation on the max cut problem, and manipulated the algorithm such that each of the internal sets have equivalent edge weights with a given threshold value. 
 
-2)Max weight cut (Fig.2)
+2)Max weight cut (Fig.2) (Circular Graphs with central node) 
 
-For this  configuration, to disable the system, the cut must be such that it decreases the system connectivity maximally such that the resulting partitions are equal in node number.  Therefore the max cut algorithm had to be adjusted such that the resulting partitions has equivalent nodes.
+For this  configuration, to disable the camera system, the cut must be such that it decreases the system connectivity discretely ensuring the system does not notice that cameras are being disconnected.  Therefore the max cut (with max weight) algorithm adjusted the max cut code such that the resulting partitions will reveal wires (in red) that are would trigger the alarm if cut - due to their combined charge (weight) . The unhighlited wires are the wires that the robber should cut in order for the camera system to be disabled from the central surveliance center without triggering the alarm. 
 
 3)Alarm has been tripped (Fig.3)
 
@@ -35,6 +35,8 @@ In case of the alarm being tripped, we implement the NetworkX Dijkstra algorithm
 
 To demonstrate the max cut sampling employed by the quantum algorithm, see figure 1.1, 2.1, 3.1
 
+#Additional Info
+The my env folder should have all the libraries needed to run the files. 
 
 
 
