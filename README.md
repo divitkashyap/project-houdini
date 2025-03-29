@@ -1,9 +1,4 @@
-# project-houdini
-Bristol Quantum Hackathon Project
-
-
-
-Consulting Report #3024 - Quantum Bank Operation
+# Consulting Report #3024 - Quantum Bank Operation
 
 
 We got approached my a bank robber that wishes to rob a multi-level building safe.
