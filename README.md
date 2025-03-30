@@ -1,7 +1,7 @@
 # Consulting Report #3024 - Quantum Bank Operation
 
 
-We got approached my a bank robber that wishes to rob a multi-level building safe.
+We got approached by a bank robber that wishes to rob a multi-level building safe.
 
 For each level of the building, there exists a complex network of security alarms that need to be carefully disabled in order for the next level to be unlocked.
 
